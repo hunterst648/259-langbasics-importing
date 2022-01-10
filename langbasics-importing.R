@@ -38,6 +38,7 @@ print(var3)
 abs(-1)
 mean(var1, var2)
 sum(var1, var2, var3)
+mean(c(var1, var2, var3))
 
 # c is a function that combines values together
 my_vars <- c(var1, var2, var3)
@@ -53,6 +54,9 @@ print(ds)
 # read.csv is part of base R, the default fx set
 # When we want to use functions to expand R, we
 # need to use library fx to load packages
+ds2 <- read_csv('data_raw/vocab16.csv')
+# might need to clear or remove ds or it will concatenate them??
+rm(ds)
 
 library(readr) #for read_csv
 ds <- read_csv('data_raw/vocab16.csv')
